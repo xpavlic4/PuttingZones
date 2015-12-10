@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    >
+        <Button
+            style="@style/Buttons.Intro"
+                android:text="@string/add_button"
+                android:onClick="add"
+                android:id="@+id/add_button"
+             />
+        <Button
+            style="@style/Buttons.Intro"
+                android:text="@string/stats_button"
+                android:onClick="showStats"
+                android:id="@+id/stats_button"
+            android:layout_below="@id/add_button"
+
+                />
+        <Button
+            style="@style/Buttons.Intro"
+                android:text="@string/close_button"
+                android:onClick="close"
+                android:id="@+id/back_to_menu_button"
+            android:layout_below="@id/stats_button"
+                />
+</RelativeLayout>

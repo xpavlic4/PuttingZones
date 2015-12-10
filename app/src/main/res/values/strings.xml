@@ -7,4 +7,7 @@
     <string name="just_right_4">4 Just right</string>
     <string name="long_left_5">5 Long left</string>
     <string name="long_right_6">6 Long right</string>
+    <string name="add_button">Add</string>
+    <string name="stats_button">Statistics</string>
+    <string name="close_button">Close</string>
 </resources>
