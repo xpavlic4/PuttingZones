@@ -10,4 +10,6 @@
     <string name="add_button">Add</string>
     <string name="stats_button">Statistics</string>
     <string name="close_button">Close</string>
+    <string name="statistics">Statistics</string>
+    <string name="putting_zones">Putting Zones</string>
 </resources>
