@@ -21,10 +21,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <TextView
+                android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/putting_zones"
-                android:id="@+id/textView" />
+                android:text="@string/putting_zones" />
         </TableRow>
 
         <TableRow
@@ -34,13 +34,14 @@
             android:gravity="center">
 
             <ImageView
+                android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/imageView"
                 android:layout_column="0"
-                android:src="@drawable/map"
+                android:layout_gravity="center"
                 android:layout_span="2"
-                android:layout_gravity="center" />
+                android:contentDescription="@string/map_of_zones"
+                android:src="@drawable/map" />
 
         </TableRow>
 
@@ -50,18 +51,20 @@
             android:gravity="center">
 
             <Button
+                android:id="@+id/button0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/online0"
-                android:id="@+id/button0"
-                android:layout_column="0" />
+                android:layout_column="0"
+                android:onClick="add0"
+                android:text="@string/online0" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/just_left_3"
                 android:id="@+id/button3"
-                android:layout_column="1" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:onClick="add3"
+                android:text="@string/just_left_3" />
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -69,18 +72,20 @@
             android:gravity="center">
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/short_left_1"
                 android:id="@+id/button1"
-                android:layout_column="0" />
-
-            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/just_right_4"
+                android:layout_column="0"
+                android:onClick="add1"
+                android:text="@string/short_left_1" />
+
+            <Button
                 android:id="@+id/button4"
-                android:layout_column="1" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:onClick="add4"
+                android:text="@string/just_right_4" />
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -88,23 +93,20 @@
             android:gravity="center">
 
             <Button
+                android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/short_right_2"
-                android:id="@+id/button2"
-                android:layout_column="0" />
+                android:layout_column="0"
+                android:onClick="add2"
+                android:text="@string/short_right_2" />
 
             <Button
+                android:id="@+id/button5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/long_left_5"
-                android:id="@+id/button5"
-                android:layout_column="1" />
-
-        </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                android:layout_column="1"
+                android:onClick="add5"
+                android:text="@string/long_left_5" />
 
         </TableRow>
     </TableLayout>

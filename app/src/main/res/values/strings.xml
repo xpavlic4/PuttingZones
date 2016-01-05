@@ -12,4 +12,5 @@
     <string name="close_button">Close</string>
     <string name="statistics">Statistics</string>
     <string name="putting_zones">Putting Zones</string>
+    <string name="map_of_zones">Map of zones</string>
 </resources>

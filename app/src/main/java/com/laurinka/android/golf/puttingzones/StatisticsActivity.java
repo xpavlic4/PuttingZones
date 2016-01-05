@@ -15,7 +15,7 @@ public class StatisticsActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.statistics);
-        prefs = getSharedPreferences("data", MODE_PRIVATE);
+        prefs = getSharedPreferences(Constants.DATA, MODE_PRIVATE);
 
         fillTextView("0", R.id.textView0);
         fillTextView("1", R.id.textView1);
