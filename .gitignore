@@ -85,3 +85,5 @@ proguard/
 # Android Studio Navigation editor temp files
 .navigation/
 
+#local gradle properties
+gradle.properties
