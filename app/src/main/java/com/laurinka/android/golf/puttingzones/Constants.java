@@ -3,12 +3,24 @@ package com.laurinka.android.golf.puttingzones;
 /**
  * Various constants
  */
-public interface Constants {
-    String ZONE0 = "zone0";
-    String ZONE1 = "zone1";
-    String ZONE2 = "zone2";
-    String ZONE3 = "zone3";
-    String ZONE4 = "zone4";
-    String ZONE5 = "zone5";
-    String DATA = "data";
+public enum Constants {
+
+    ZONE0("zone0"),
+    ZONE1("zone1"),
+    ZONE2("zone2"),
+    ZONE3("zone3"),
+    ZONE4("zone4"),
+    ZONE5("zone5"),
+    DATA("data");
+
+    private String definition;
+
+    Constants(String tmp) {
+
+        definition = tmp;
+    }
+
+    public String getString() {
+        return definition;
+    }
 }

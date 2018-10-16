@@ -3,6 +3,7 @@ package com.laurinka.android.golf.puttingzones;
 import android.app.Activity;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 /**
@@ -46,10 +47,9 @@ public class AddActivity extends Activity {
     private void updateZone(Constants tmpDefinition) {
         String toUpdate = tmpDefinition.getString();
         int zone0 = prefs.getInt(toUpdate, 0);
-        prefs.edit().putInt(toUpdate, ++zone0).commit();
+        zone0 = zone0 + 1;
+        Log.d("CRUD", "updateZone: " + toUpdate+" updated with " +zone0);
+        prefs.edit().putInt(toUpdate, zone0).apply();
     }
 
-    public void back(View view) {
-        finish();
-    }
 }
