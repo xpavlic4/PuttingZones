@@ -15,12 +15,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void add(View view) {
         startActivity(new Intent(this, AddActivity.class));
-        finish();
     }
 
     public void showStats(View view) {
         startActivity(new Intent(this, StatisticsActivity.class));
-        finish();
     }
 
     public void close(View view) {
