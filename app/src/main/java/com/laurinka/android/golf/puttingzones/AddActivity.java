@@ -16,7 +16,7 @@ public class AddActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.add);
-        prefs = getSharedPreferences(Constants.DATA, MODE_PRIVATE);
+        prefs = getSharedPreferences(Constants.DATA.getString(), MODE_PRIVATE);
     }
 
     public void add0(View view) {
@@ -43,8 +43,13 @@ public class AddActivity extends Activity {
         updateZone(Constants.ZONE5);
     }
 
-    private void updateZone(String zone01) {
-        int zone0 = prefs.getInt(zone01, 0);
-        prefs.edit().putInt(zone01, ++zone0).apply();
+    private void updateZone(Constants tmpDefinition) {
+        String toUpdate = tmpDefinition.getString();
+        int zone0 = prefs.getInt(toUpdate, 0);
+        prefs.edit().putInt(toUpdate, ++zone0).commit();
+    }
+
+    public void back(View view) {
+        finish();
     }
 }
