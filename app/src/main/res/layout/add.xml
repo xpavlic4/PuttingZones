@@ -109,15 +109,6 @@
                 android:text="@string/long_left_5" />
 
         </TableRow>
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <Button
-                android:text="@string/back"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="back"/>
-        </TableRow>
     </TableLayout>
 
 </RelativeLayout>
