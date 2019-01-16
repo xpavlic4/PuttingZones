@@ -17,7 +17,7 @@ public class LaurinkaActivity extends Activity {
 
         setContentView(R.layout.laurinka);
 
-        Thread logo = new Thread(){
+        new Thread(){
             public void run(){
                 try{
 
@@ -37,8 +37,6 @@ public class LaurinkaActivity extends Activity {
                     finish();
                 }
             }
-        };
-
-        logo.start();
+        }.start();
     }
 }
