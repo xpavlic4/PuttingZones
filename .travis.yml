@@ -3,8 +3,8 @@ android:
    components:
    - tools
    - platform-tools
-   - android-22
-   - build-tools-23.0.3
+   - android-26
+   - build-tools-26.0.2
    - extra
 jdk: oraclejdk8
 
@@ -12,4 +12,3 @@ before_install:
   - chmod +x gradlew
   # required libs for android build tools
   - sudo apt-get update
-  - sudo apt-get install -qq --force-yes libgd2-xpm ia32-libs ia32-libs-multiarch
