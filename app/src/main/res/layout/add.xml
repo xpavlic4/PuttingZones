@@ -19,11 +19,15 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="25sp"
                 android:text="@string/putting_zones" />
         </TableRow>
 
@@ -51,20 +55,20 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/button0"
-                android:layout_width="match_parent"
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="0"
-                android:onClick="add0"
-                android:text="@string/online0" />
+                android:onClick="add5"
+                android:text="@string/long_left" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="1"
-                android:onClick="add3"
-                android:text="@string/just_left_3" />
+                android:onClick="add6"
+                android:text="@string/long_right" />
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -72,12 +76,12 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/button3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_column="0"
-                android:onClick="add1"
-                android:text="@string/short_left_1" />
+                android:onClick="add3"
+                android:text="@string/just_left" />
 
             <Button
                 android:id="@+id/button4"
@@ -85,29 +89,36 @@
                 android:layout_height="wrap_content"
                 android:layout_column="1"
                 android:onClick="add4"
-                android:text="@string/just_right_4" />
+                android:text="@string/just_right" />
+
         </TableRow>
+
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center">
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:onClick="add1"
+                android:text="@string/short_left" />
+            <Button
+                android:id="@+id/button0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:onClick="add0"
+                android:text="@string/online" />
 
             <Button
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_column="0"
+                android:layout_column="2"
                 android:onClick="add2"
-                android:text="@string/short_right_2" />
-
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_column="1"
-                android:onClick="add5"
-                android:text="@string/long_left_5" />
-
+                android:text="@string/short_right" />
         </TableRow>
     </TableLayout>
 
