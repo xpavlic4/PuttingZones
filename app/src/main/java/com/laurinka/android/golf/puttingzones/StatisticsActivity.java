@@ -26,6 +26,7 @@ public class StatisticsActivity extends Activity {
         fillTextView(Constants.ZONE3, R.id.textView3);
         fillTextView(Constants.ZONE4, R.id.textView4);
         fillTextView(Constants.ZONE5, R.id.textView5);
+        fillTextView(Constants.ZONE5, R.id.textView6);
     }
 
     private void fillTextView(Constants key, int textView0) {

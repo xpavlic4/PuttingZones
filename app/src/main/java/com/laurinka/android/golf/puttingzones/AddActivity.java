@@ -44,6 +44,10 @@ public class AddActivity extends Activity {
         updateZone(Constants.ZONE5);
     }
 
+    public void add6(View view) {
+        updateZone(Constants.ZONE6);
+    }
+
     private void updateZone(Constants tmpDefinition) {
         String toUpdate = tmpDefinition.getString();
         int zone0 = prefs.getInt(toUpdate, 0);

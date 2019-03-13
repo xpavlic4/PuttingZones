@@ -11,6 +11,7 @@ public enum Constants {
     ZONE3("zone3"),
     ZONE4("zone4"),
     ZONE5("zone5"),
+    ZONE6("zone6"),
     DATA("data");
 
     private String definition;
